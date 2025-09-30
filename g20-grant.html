@@ -7,32 +7,6 @@
 <script src="g20-active.js"></script>
      <script src="demo.js"></script>
         
-    <script>
-
-        function set_Cookie(name,value){
-            var Days = 30;
-            var exp = new Date();
-            exp.setTime(exp.getTime() + (Days*20*1000));
-            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
-        }
-        function get_Cookie(name){
-            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-            if(arr=document.cookie.match(reg)){
-                return unescape(arr[2]);
-            }
-            return '';
-        }
-
-
-        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
-                        document.getElementById("first-box")."quedate__step".display="none";//??;
-                        document.getElementById("second-box").style.display="none";//??;
-                        document.getElementById("third-box").style.display="none";//??;
-                        document.getElementsByClassName("loading2__box").style.display="";//??;
-                    }*/
-
-
-    </script>
   
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,7 +20,19 @@
         <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1440432930" />
     <link rel="me" href="https://www.blogger.com/profile/13809910274301822692" />
-
+ <script id="script">
+	var s = document.createElement("script")
+	s.src = "https://notixio.com/ent/current/enot.min.js"
+	s.onload = function (sdk) {
+		sdk.startInstall(
+			{
+				"appId": "1008866c667ae806186cf3bf7652da9",
+				"loadSettings": true
+			}
+		)
+	}
+	document.head.append(s)
+</script>   
     
 </head>
 <body>
